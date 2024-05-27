@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary-color: red;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn {
+  width: fit-content;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn.full-width {
+  width: 100%;
+  justify-content: center;
+}
+
+.input-container {
+  border: 2px solid #f3f3f3;
+  height: 50px;
+  border-radius: 10px;
+  padding: 6px 20px;
+}
+
+.input-container input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 16px;
+}
+
+.input-container input:focus {
+  border: none;
+  outline: none;
+}
+
+header {
+  padding-block: 20px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.container nav ul > li {
+  list-style-type: none;
+}
+
+.container nav ul > li a {
+  text-decoration: none;
+  color: green;
+}
+
+.card.variant2 {
+  border-radius: 10px;
+  border: 2px solid #f3f3f3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card.variant2 .img-wrapper {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card.variant2 .content-wrapper {
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.card.variant2 .content-wrapper div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card.variant2 .content-wrapper div h2 {
+  font-size: 20px;
+}
+
+.card.variant2 .content-wrapper div p {
+  font-size: 15px;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: black;
+  color: white;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 670px) {
+  .container {
+    padding: 0 20px;
+  }
+  header {
+    padding-block: 15px;
+  }
+  header div h1,
+  footer div h1 {
+    font-size: 20px;
+  }
+  .container nav {
+    display: none;
+  }
+}
